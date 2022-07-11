@@ -54,10 +54,13 @@ void Quicksort::driver(){
 
 void Quicksort::info(){
     cout << AZUL << "O(n*log(n))\n"
-                    "Peor caso: O(n^2)" << endl;
-    cout << "procedimiento Recursivo, Pivot, opuestos al ordenamiento burbuja" << endl;
+                    "Peor caso: O(n^2)\n" << endl;
+    cout << "procedimiento Recursivo, Pivot, opuestos al ordenamiento burbuja \n"
+            "NO ES STABLE, in place para la entrada, solo necesita memoria extra para recursividad"<< endl;
     cout << "iTEMS a la iz son menores ITEMS a la derecha son mayores" << endl;
-    cout << "Movemos el item al final de la lista" << endl;
+    cout << "Movemos el item al final de la lista \n"
+            "para mejorar el algoritmo se recomienda mcentrarse en la eleccion del pivote\n"
+            "usualmente se escoge el indice del medio" << endl;
     cout << ROJO << "[8,3,6,4,2,5,7,1]" << endl;
     cout << VERDE << " pivot 4 puntero IZQ 8 puntero DER 1" << endl;
     cout << "8<4? no cumple pasamos al puntero derec 1>4? no cumple hacemos swap" << endl;

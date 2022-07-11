@@ -10,14 +10,25 @@ using namespace std;
 const string OPCIONES [] = {"Sort",
                             "Shellsort",
                             "Radixsort",
-                            "Quicksort",
-                            "Mergesort",
+                            "Quicksort DIVIDE y VENCERAS",
+                            "Mergesort DIVIDE y VENCERAS",
                             "Heapsort",
                             "Treesort",
+                            "Bubblesort",
+                            "Big O",
+                            "Mergesort vs Quicksort",
+                            "Arboles y recorridos",
+                            "AVL, arboles multivias, arboles B, arboles B+",
+                            "Grafos Caminos minimos vs Arbol de expansion minima",
+                            "Dijkstra vs Floyd-Warshall",
+                            "Prim vs Kruskal",
+                            "Greedy voraz VS Dynamic programacion dinamica",
+                            "HASH",
+                            "COLA de prioridad",
                             "Salir"
                             };
 
-const int CANT_OPCIONES = 8;
+const int CANT_OPCIONES = 19;
 
 //Colores
 const string NEGRO = "\e[1;30m";

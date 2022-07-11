@@ -87,10 +87,13 @@ public:
                         "Agregar “n” nodos:\n"
                         "Mejor caso: O(n*log(n))\n"
                         "Peor caso:O(n2)" << endl;
-        cout << AZUL << " crea un árbol de búsqueda binario y después \n"
-                        " realiza un recorrido inorden en el árbol de\n"
-                        " búsqueda binario creado para obtener los \n"
-                        "elementos en ordenados de forma creciente" << endl;
+        cout << "Es un algoritmo de ordenamiento, usando abb, \nESTABLE buen rendimiento \n"
+                "No requiere espacio de alamcenamiento extra,\n puede ordenar"
+                "listas tal cual las recibe"<< endl;
+        cout << AZUL << "1. crea un árbol de búsqueda binario y después \n"
+                        "2. realiza un recorrido inorden en el árbol de\n"
+                        "3. búsqueda binario creado para obtener los \n"
+                        "4. elementos en ordenados de forma creciente" << endl;
     }
 };
 

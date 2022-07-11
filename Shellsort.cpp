@@ -43,8 +43,16 @@ void Shellsort::printArray(int arr[], int n){
     cout << endl;
 }
 void Shellsort::info(){
-    cout << AZUL << "Caso promedio: O(n^5/4) ó O(n^3/2)\n"
-                    "Peor caso: inserción sort-> O(n^2)" << endl;
+    cout << AZUL << "Caso promedio: O(n^5/4) ó O(n^3/2) depende del intervalo seleccionado"
+                    "O(nlog(n))\n"
+                    "Peor caso: inserción sort-> O(n^2)\n" << endl;
+    cout << "Consiste en comoparar los elementos separados por un espacio\n"
+            "o GAP de varias posiciones indices, una vez ordenado su gap\n"
+            "se reduce, y su ultimo paso es un sort simple\n"
+            "es cbasicamente como esperar q esos pasos grandes acerquen mas el\n"
+            "item a su posicion esperada\n"
+            "NO ES ESTABLE, puede cambiar items con mismo valor de orden,\n"
+            "IN PLACE ******NO ES NECESARIO EL CALLBACK"<< endl;
     cout << "Divide a la mitad si el array es 10, la mitad 5" << endl;
     cout << "compara el elemento 0 con el 5 elemento" << endl;
 }

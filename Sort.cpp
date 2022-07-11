@@ -44,9 +44,15 @@ void Sort::printArray(int arr[], int size){
     cout << endl;
 }
 void Sort::info(){
-    cout << AZUL << "Se trabaja de Izq a derecha, examinanando cada Item y comparandolo con los de su izq" << endl;
+    cout << AZUL << "Es un algoritmo simple de ordenamiento, ES SIMPLE, es eficiente para peuqenos sets de datos" << endl;
+    cout << "Se trabaja de Izq a derecha, examinanando cada Item y comparandolo con los de su izq\n"
+            "Es mas eficiente en la practica q otros algoritmos cuadraticos  (bubble sort) \n"
+            "ES ESTABLE, algoritmo de tipo IN PLACE (o sea no necesiar memoria aux)\n"
+            "ONLINE o sea que pocesas pieza por pieza en serie en el ordne q entra, sin necesitar todo el input" << endl;
     cout << AZUL << "O(n^2) en el peor de sus  casos para comparacion y swap" << endl;
-    cout << AZUL << "O(n) mejor caso, ya ordenado" << endl;
+    cout << AZUL << "O(n) mejor caso,mya no se rwalizan intercambios YA ESTA ORDENADO \n"
+                    "solo se realizan comparaciones\n"
+                    "" << endl;
 }
 void Sort::driver(){
     int arr[] = {64, 25, 12, 22, 11};

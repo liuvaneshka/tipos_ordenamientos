@@ -78,11 +78,14 @@ void Radixsort::driver(){
 
 void Radixsort::info(){
 
-    cout << AZUL << "O(nw), N es el numero de llaves y W la longitu de la llave.\n No muy recomendado porque hace muchas copias." << endl;
+    cout << AZUL << "O(nw), N es el numero de llaves y W la longitu de la llave.\n"
+                    " No muy recomendado porque hace muchas copias.\n" << endl;
     cout << "SOLO SE USA PARA ARREGLAR NUMEROS" << endl;
-    cout << "Es un algoritmo de ordenacion no comparativo" << endl;
+    cout << "Es un algoritmo de ordenacion no comparativo, ordena enteros, \n"
+            "procesando sus digitos de forma individual \n"
+            "ESTABLE ...... NO es inplace \n" << endl;
     cout << "Data final del 1800 se usaba para las maqunas tabuladoras, para censo" << endl;
     cout << "Se uso en maquinas de tipo tareta perforada, por su uso bin" << endl;
-    cout << "Hoy en dia se aplic para las colecciones de cadenas y enteros binarios, lo que la hace 50"
-            "% o 3 veces mas rapida" << endl;
+    cout << "Hoy en dia se aplic para las colecciones de cadenas y enteros binarios, \n"
+            "lo que la hace 50% o 3 veces mas rapida " << endl;
 }

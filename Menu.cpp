@@ -10,6 +10,7 @@
 #include "Mergesort.h"
 #include "Heapsort.h"
 #include "Treesort.h"
+#include "Arboles_grafos.h"
 
 Menu::Menu(){}
 
@@ -29,6 +30,7 @@ void Menu::elegir_opcion(){
 
 bool Menu::selector_menu(){
     bool estado;
+    Arboles_grafos ag;
 
     switch (this->opcion){
 
@@ -82,6 +84,71 @@ bool Menu::selector_menu(){
             break;
 
         case 8:
+            cout << VERDE << "CASO_8 Bubblesort" << endl;
+            estado = true;
+            break;
+
+        case 9:
+            cout << VERDE << "CASO_9 Big O" << endl;
+            ag.bigO();
+            estado = true;
+            break;
+
+        case 10:
+            cout << VERDE << "CASO_10 Mergesort vs Quicksort" << endl;
+            ag.mergeVSsort();
+            estado = true;
+            break;
+
+        case 11:
+            cout << VERDE << "CASO_11 Arboles y recorridos" << endl;
+            ag.arboles();
+            estado = true;
+            break;
+
+        case 12:
+            cout << VERDE << "CASO_12 AVL, arboles multivias, arboles B, arboles B+" << endl;
+            ag.Avl_multi_b_bplus();
+            estado = true;
+            break;
+
+        case 13:
+            cout << VERDE << "CASO_13 Grafos Caminos minimos vs Arbol de expansion minima" << endl;
+            ag.cmVSmst();
+            estado = true;
+            break;
+
+        case 14:
+            cout << VERDE << "Dijkstra vs Floyd-Warshall CAMINO MINIMO" << endl;
+            ag.DijkstraVSFloyd();
+            estado = true;
+            break;
+
+        case 15:
+            cout << VERDE << "Prim vs Kruskal ARBOL EXPANSION MIN" << endl;
+            ag.primVSkruskal();
+            estado = true;
+            break;
+
+        case 16:
+            cout << VERDE << "Greedy voraz VS Dynamic programacion dinamica" << endl;
+            ag.greedyVSDynamic();
+            estado = true;
+            break;
+
+        case 17:
+            cout << VERDE << "HASH" << endl;
+            ag.hash();
+            estado = true;
+            break;
+
+        case 18:
+            cout << VERDE << "COLA de prioridad" << endl;
+            ag.priority_queue();
+            estado = true;
+            break;
+
+        case 19:
             cout << ROJO << "Cordial despedida" << endl;
             estado = false;
             break;

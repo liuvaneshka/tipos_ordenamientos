@@ -86,5 +86,11 @@ void Mergesort::driver(){
 void Mergesort::info(){
     cout << AZUL<< "Complejidad del Merge: O(n)\n"
                    "Complejidad del sort: O(log(n))\n"
-                   "Mejor y peor caso: O(n*log(n))" << endl;
+                   "Mejor y peor caso: O(n*log(n))\n" << endl;
+    cout << " ESTABLE not in place "
+            "\n Consiste en ir dividiendo a la moitad la lista o el arreglo \n"
+            "prdenar cada lista recursivamente, y al final mezclar las dos sublistas\n"
+            "\n En principio una lista pequena necesita menos pasos para ordenarse que una lista grande \n"
+            "se necesitan menos pasos para construir una lista ordenada a partir de dos listas ordenadas\n"
+            "\n ESPACIO AUX O(n) ES ESTABLE, mejor para listas, pasa por todo el proceso aun asi el arreglo este ordenado \n" << endl;
 }
